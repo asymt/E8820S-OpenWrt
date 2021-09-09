@@ -55,8 +55,8 @@ git clone --depth=1 https://github.com/BoringCat/luci-app-mentohust
 git clone --depth=1 https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk
 
 # Add minieap & luci-proto-minieap
-git clone --depth=1 https://github.com/ysc3839/luci-proto-minieap
-svn co https://github.com/project-openwrt/openwrt/trunk/package/ntlf9t/minieap
+#git clone --depth=1 https://github.com/ysc3839/luci-proto-minieap
+#svn co https://github.com/project-openwrt/openwrt/trunk/package/ntlf9t/minieap
 
 # Add ServerChan
 git clone --depth=1 https://github.com/tty228/luci-app-serverchan
@@ -89,7 +89,7 @@ git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config
 rm -rf ../lean/luci-theme-argon
 
 # Add luci-theme-rosy
-git clone --depth=1 -b openwrt-18.06 https://github.com/shiyu1314/luci-theme-rosy
+git clone --depth=1 -b openwrt-18.06 https://github.com/rosywrt/luci-theme-rosy
 rm -rf ../lean/luci-theme-rosy
 
 # Use immortalwrt's luci-app-netdata
@@ -103,14 +103,15 @@ git clone --depth=1 https://github.com/project-openwrt/openwrt-tmate
 git clone --depth=1 https://github.com/tindy2013/openwrt-subconverter
 
 # Add gotop
-svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/gotop
+#svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/gotop
+git clone --depth=1 https://github.com/xxxserxxx/gotop
 
 # Add smartdns
 svn co https://github.com/pymumu/smartdns/trunk/package/openwrt ../smartdns
-svn co https://github.com/project-openwrt/openwrt/trunk/package/ntlf9t/luci-app-smartdns ../luci-app-smartdns
-
+#svn co https://github.com/project-openwrt/openwrt/trunk/package/ntlf9t/luci-app-smartdns ../luci-app-smartdns
+git clone -b lede https://github.com/pymumu/luci-app-smartdns ../luci-app-smartdns
 # Add luci-udptools
-git clone --depth=1 https://github.com/zcy85611/openwrt-luci-kcp-udp
+git clone --depth=1 https://github.com/hongwenjun/openwrt-luci-kcp-udp
 
 # Add OpenAppFilter
 git clone --depth=1 https://github.com/destan19/OpenAppFilter
@@ -121,7 +122,7 @@ git clone --depth=1 https://github.com/destan19/OpenAppFilter
 # Add driver for rtl8821cu & rtl8812au-ac
 #svn co https://github.com/project-openwrt/openwrt/branches/master/package/ctcgfw/rtl8812au-ac
 #svn co https://github.com/project-openwrt/openwrt/branches/master/package/ctcgfw/rtl8821cu
-#popd
+popd
 
 # Add netdata
 #pushd feeds/packages/admin
