@@ -21,7 +21,7 @@ on:
       - main
     paths:
       - 'scripts/diy-part1.sh'
-      - 'scripts/diy-part1.sh'
+      - 'scripts/diy-part2.sh'
       - 'config/e8820s-kaiyuan.config'
       - '.github/workflows/e8820s-kaiyuan.yml'
 
