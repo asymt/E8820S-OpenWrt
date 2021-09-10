@@ -35,7 +35,8 @@ sed -i "s/'UTC'/'CST-8'\n        set system.@system[-1].zonename='Asia\/Shanghai
 
 # 补充缺失的库
 svn co https://github.com/coolsnowwolf/lede/trunk/package/libs/libcap package/libs/libcap
-
+rm -rf package/libs/nettle
+svn co https://github.com/coolsnowwolf/lede/trunk/package/libs/nettle package/libs/nettle
 
 # Clone community packages to package/community
 mkdir package/community
